@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__identity">
+        <h1 class="header__name">Amani Loishori</h1>
+        <p class="header__title">Software Engineer &amp; Web Developer</p>
+      </div>
+      <div class="header__actions">
+        <button class="header__btn" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="5"/>
+            <line x1="12" y1="19" x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+            <line x1="2" y1="12" x2="5" y2="12"/>
+            <line x1="19" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="header__btn" id="downloadPdf" aria-label="Download PDF">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/>
+            <polyline points="9 15 12 18 15 15"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="layout">
+
+      <!-- SIDEBAR: section nav + supplementary info -->
+      <aside class="sidebar">
+
+        <nav class="side-nav" aria-label="Page sections">
+          <ul class="side-nav__list">
+            <li class="side-nav__item" data-section="summary">
+              <a href="#summary">Summary</a>
+            </li>
+            <li class="side-nav__item" data-section="experience">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="side-nav__item" data-section="skills">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="side-nav__item" data-section="projects">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="side-nav__item" data-section="education">
+              <a href="#education">Education</a>
+            </li>
+            <li class="side-nav__item" data-section="institutions">
+              <a href="#institutions">Institutions</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="contact-pills">
+          <a class="contact-pill" href="mailto:amani@rayomi.co.tz">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            amani@rayomi.co.tz
+          </a>
+          <a class="contact-pill" href="tel:+255743795089">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6 6l.95-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            +255 743 795 089
+          </a>
+          <a class="contact-pill" href="https://github.com/roi255" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+            roi255
+          </a>
+          <div class="contact-pill contact-pill--location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Dar es Salaam, Tanzania
+          </div>
+        </div>
+
+        <section class="section">
+          <h2 class="section__title">Languages</h2>
+          <ul class="lang-list">
+            <li>
+              <span class="lang-list__name">English</span>
+              <span class="lang-list__level">Fluent</span>
+            </li>
+            <li>
+              <span class="lang-list__name">Kiswahili</span>
+              <span class="lang-list__level">Native</span>
+            </li>
+          </ul>
+        </section>
+
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+
+        <section class="section" id="summary">
+          <h2 class="section__title">Summary</h2>
+          <p class="summary">
+            Software engineer with a passion for building web apps and mobile apps. Interested in the intersection of frontend, backend, and infrastructure — designing APIs, wiring up integrations, and figuring out how moving parts fit together to create something that just works. Whether it's connecting services, containerising deployments, or debugging why two systems refuse to cooperate, that's exactly where I want to be.
+          </p>
+        </section>
+
+        <section class="section" id="experience">
+          <h2 class="section__title">Experience</h2>
+
+          <article class="entry">
+            <div class="entry__header">
+              <div>
+                <h3 class="entry__role">Software Engineer &amp; Web Developer</h3>
+                <p class="entry__org">Rayomi Technologies</p>
+              </div>
+              <span class="entry__period">Aug 2023 – Present</span>
+            </div>
+            <ul class="entry__bullets">
+              <li>Build and maintain full-stack web applications using React, Next.js, Laravel, and Go across multiple client projects.</li>
+              <li>Design, develop, and integrate REST APIs; use Postman extensively for testing and documentation.</li>
+              <li>Manage containerised deployment environments with Docker and Kubernetes on Ubuntu Server.</li>
+              <li>Collaborate on the full development lifecycle from architecture and database design through to production deployment.</li>
+              <li>Support clients in onboarding and using company platforms, troubleshooting issues and ensuring service availability through active server management.</li>
+              <li>Manage continuous deployment pipelines to deliver client-requested features, updates, and bug fixes in a timely manner.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry__header">
+              <div>
+                <h3 class="entry__role">Web Design Intern</h3>
+                <p class="entry__org">Costech</p>
+              </div>
+              <span class="entry__period">Jun 2022 – Sep 2022</span>
+            </div>
+            <ul class="entry__bullets">
+              <li>Designed and developed web interfaces using pure HTML and CSS, building a strong foundation in core web technologies.</li>
+              <li>Produced responsive, standards-compliant layouts and UI components with no framework dependencies.</li>
+            </ul>
+          </article>
+
+        </section>
+
+        <section class="section" id="skills">
+          <h2 class="section__title">Skills</h2>
+          <div class="skills-grid">
+
+            <div class="skill-group">
+              <h3 class="skill-group__label">Frontend</h3>
+              <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__label">Backend</h3>
+              <ul class="skill-list">
+                <li>PHP</li>
+                <li>Go</li>
+                <li>Laravel</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__label">Mobile</h3>
+              <ul class="skill-list">
+                <li>React Native</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__label">Database</h3>
+              <ul class="skill-list">
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>SQLite</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__label">DevOps</h3>
+              <ul class="skill-list">
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Git</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__label">Infrastructure</h3>
+              <ul class="skill-list">
+                <li>Ubuntu Server</li>
+                <li>Windows Server</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__label">API</h3>
+              <ul class="skill-list">
+                <li>REST API Design</li>
+                <li>API Integration</li>
+                <li>Postman</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <h2 class="section__title">Associated Projects</h2>
+
+          <article class="entry">
+            <div class="entry__header">
+              <div>
+                <h3 class="entry__role">OSIM — Student Information System</h3>
+              </div>
+            </div>
+            <ul class="entry__bullets">
+              <li>Production college information system serving 40+ Tanzanian universities and colleges, managing the full student lifecycle — registration, enrollment, grading, fees, transcripts, certificates, and alumni tracking.TCU and NACTE integrations for submitting and fetching student academic and enrollment information. Integrates with accounting systems like Sage 200 and Sage 300 for customers, bills and payments tracking.</li>
+          </article>
+
+          <article class="entry">
+            <div class="entry__header">
+              <div>
+                <h3 class="entry__role">CampusMaster</h3>
+              </div>
+            </div>
+            <ul class="entry__bullets">
+              <li>A Multi-tenant education management SaaS built on Laravel 12 and Filament 5 with a plugin-based architecture, supporting applicant, student, and central admission portals.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry__header">
+              <div>
+                <h3 class="entry__role">PSP GATEWAY CLIENT — Banking API Client Library</h3>
+              </div>
+            </div>
+            <ul class="entry__bullets">
+              <li>Go client library providing typed API clients for Tanzanian banks and payment service providers — NBC, NMB, CRDB, MKCB, TCB, PBZ, and an SMS gateway.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry__header">
+              <div>
+                <h3 class="entry__role">CAMPLIB — Library Management API</h3>
+              </div>
+            </div>
+            <ul class="entry__bullets">
+              <li>Laravel REST API for managing library operations in colleges and schools — digital collections, borrowing, rentals, and fines. Covers student and staff management, library space rental, authentication, and full user management.</li>
+            </ul>
+          </article>
+
+        </section>
+
+        <section class="section" id="education">
+          <h2 class="section__title">Education</h2>
+          <div class="edu-item">
+            <p class="edu-item__degree">B.Sc. Information Systems &amp; Network Engineering</p>
+            <div class="edu-item__meta">
+              <p class="edu-item__school">St. Joseph's University · Tanzania</p>
+              <p class="edu-item__year">2020 – 2024</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="institutions">
+          <h2 class="section__title">Institutions</h2>
+          <div class="institutions">
+            <div class="institution"><span class="institution__code">CHATO COHEST</span><span class="institution__name">Chato College of Health Sciences &amp; Technology</span></div>
+            <div class="institution"><span class="institution__code">CUHAS</span><span class="institution__name">Catholic University of Health and Allied Sciences</span></div>
+            <div class="institution"><span class="institution__code">DMI</span><span class="institution__name">Dar es Salaam Maritime Institute</span></div>
+            <div class="institution"><span class="institution__code">FHTI</span><span class="institution__name">Faraja Health Training Institute</span></div>
+            <div class="institution"><span class="institution__code">HKMU</span><span class="institution__name">Hubert Kairuki Memorial University</span></div>
+            <div class="institution"><span class="institution__code">KCMUCO</span><span class="institution__name">Kilimanjaro Christian Medical University College</span></div>
+            <div class="institution"><span class="institution__code">KIUT</span><span class="institution__name">Kampala International University in Tanzania</span></div>
+            <div class="institution"><span class="institution__code">Makumira</span><span class="institution__name">Tumaini University Makumira</span></div>
+            <div class="institution"><span class="institution__code">MKCB</span><span class="institution__name">Mkombozi Commercial Bank — Payment Integration</span></div>
+            <div class="institution"><span class="institution__code">MNMA</span><span class="institution__name">Mwalimu Nyerere Memorial Academy</span></div>
+            <div class="institution"><span class="institution__code">MTI</span><span class="institution__name">Moshi Technological Institute</span></div>
+            <div class="institution"><span class="institution__code">NBC</span><span class="institution__name">National Bank of Commerce — Payment Integration</span></div>
+            <div class="institution"><span class="institution__code">NMB</span><span class="institution__name">National Microfinance Bank — Payment Integration</span></div>
+            <div class="institution"><span class="institution__code">RHTI</span><span class="institution__name">Regional Health Training Institute</span></div>
+            <div class="institution"><span class="institution__code">SMMUCO</span><span class="institution__name">Stefano Moshi Memorial University College</span></div>
+            <div class="institution"><span class="institution__code">SOCAITE</span><span class="institution__name">Southern College of Arts, ICT &amp; Education</span></div>
+            <div class="institution"><span class="institution__code">STEMMUCO</span><span class="institution__name">Stella Maris Mtwara University College</span></div>
+            <div class="institution"><span class="institution__code">SUMAIT</span><span class="institution__name">Sumait University</span></div>
+            <div class="institution"><span class="institution__code">SUZA</span><span class="institution__name">State University of Zanzibar</span></div>
+            <div class="institution"><span class="institution__code">TCB</span><span class="institution__name">Tanzania Commercial Bank — Payment Integration</span></div>
+            <div class="institution"><span class="institution__code">TUDARCO</span><span class="institution__name">Tumaini University Dar es Salaam College</span></div>
+            <div class="institution"><span class="institution__code">UoA</span><span class="institution__name">University of Arusha</span></div>
+            <div class="institution"><span class="institution__code">WIARC</span><span class="institution__name">Wete Institute of Agricultural Research Centre</span></div>
+
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+  <script src="lib/html2canvas.min.js"></script>
+  <script src="lib/jspdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
